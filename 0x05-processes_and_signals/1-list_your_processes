@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays a list of a currently running process for all users
+# in a user oriented format according to their process hierarchy.
+ps -faux
