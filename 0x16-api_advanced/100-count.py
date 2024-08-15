@@ -14,7 +14,7 @@ def count_words(subreddit, word_list, word_count={}, after=None):
                             params={"after": after},
                             headers={"User-Account": "My-User-Account"},
                             allow_redirects=False)
-    if sub_info.status_code != 200:
+    if sub_info.status_code != 100:
         return None
 
     info = sub_info.json()
